@@ -1,12 +1,12 @@
 //
-//  YJProgressHUD.m
+//  YJHUD.m
 //  YJProgressHUDDEMO
 //
-//  Created by cool on 2018/4/19.
+//  Created by cool on 2018/4/20.
 //  Copyright © 2018年 cool. All rights reserved.
 //
 
-#import "YJProgressHUD.h"
+#import "YJHUD.h"
 
 #define RV (UIView *)UIApplication.sharedApplication.keyWindow.subviews.firstObject
 
@@ -15,7 +15,7 @@ static dispatch_source_t timer;
 static NSInteger timerTimes = 0;
 static NSInteger sn_topBar = 1001;
 
-@implementation YJProgressHUD
+@implementation YJHUD
 
 /// 屏幕的旋转度数
 + (double)degree {
@@ -220,13 +220,13 @@ static NSInteger sn_topBar = 1001;
     
     switch (type) {
         case YJProgressHUDTypeSuccess:
-            image = [YJProgressHUD imageOfSuccess];
+            image = [YJHUD imageOfSuccess];
             break;
         case YJProgressHUDTypeError:
-            image = [YJProgressHUD imageOfError];
+            image = [YJHUD imageOfError];
             break;
         default:
-            image = [YJProgressHUD imageOfInfo];
+            image = [YJHUD imageOfInfo];
             break;
     }
     
@@ -295,7 +295,7 @@ static NSInteger sn_topBar = 1001;
 
 @end
 
-@implementation YJProgressHUD(Image)
+@implementation YJHUD(Image)
 + (UIImage *)imageOfSuccess {
     return [self drawImage:(YJProgressHUDTypeSuccess)];
 }
@@ -402,57 +402,57 @@ static NSInteger sn_topBar = 1001;
 
 @end
 
-@implementation UIWindow(YJProgressHUD)
+@implementation UIWindow(YJHUD)
 - (void)hide {
-    [YJProgressHUD hideNotice:self];
+    [YJHUD hideNotice:self];
 }
 @end
 
 @implementation UIResponder (YJHUD)
 
 - (UIWindow *)showWait {
-    return [YJProgressHUD showWait:nil timeInterval:0];
+    return [YJHUD showWait:nil timeInterval:0];
 }
 - (UIWindow *)showWaitWithImages:(NSArray<UIImage *> *)images timeInterval:(NSTimeInterval)timeInterval {
-    return [YJProgressHUD showWait:images timeInterval:timeInterval];
+    return [YJHUD showWait:images timeInterval:timeInterval];
 }
 
 - (UIWindow *)showNoticeTop:(NSString *)text {
     return [self showNoticeTopWithText:text autoClear:YES autoClearTime:2];
 }
 - (UIWindow *)showNoticeTopWithText:(NSString *)text autoClear:(BOOL)autoClear autoClearTime:(NSTimeInterval)autoClearTime {
-    return [YJProgressHUD showNoticeOnStatusBar:text autoClear:autoClear autoClearTime:autoClearTime];
+    return [YJHUD showNoticeOnStatusBar:text autoClear:autoClear autoClearTime:autoClearTime];
 }
 
 - (UIWindow *)showSuccess:(NSString *)text {
     return [self showSuccessWithText:text autoClear:YES autoClearTime:2];
 }
 - (UIWindow *)showSuccessWithText:(NSString *)text autoClear:(BOOL)autoClear autoClearTime:(NSTimeInterval)autoClearTime {
-    return [YJProgressHUD showNoticeWithText:text type:(YJProgressHUDTypeSuccess) autoClear:autoClear autoClearTime:autoClearTime];
+    return [YJHUD showNoticeWithText:text type:(YJProgressHUDTypeSuccess) autoClear:autoClear autoClearTime:autoClearTime];
 }
 
 - (UIWindow *)showError:(NSString *)text {
     return [self showErrorWithText:text autoClear:YES autoClearTime:2];
 }
 - (UIWindow *)showErrorWithText:(NSString *)text autoClear:(BOOL)autoClear autoClearTime:(NSTimeInterval)autoClearTime {
-    return [YJProgressHUD showNoticeWithText:text type:(YJProgressHUDTypeError) autoClear:autoClear autoClearTime:autoClearTime];
+    return [YJHUD showNoticeWithText:text type:(YJProgressHUDTypeError) autoClear:autoClear autoClearTime:autoClearTime];
 }
 
 - (UIWindow *)showInfo:(NSString *)text {
     return [self showInfoWithText:text autoClear:YES autoClearTime:2];
 }
 - (UIWindow *)showInfoWithText:(NSString *)text autoClear:(BOOL)autoClear autoClearTime:(NSTimeInterval)autoClearTime {
-    return [YJProgressHUD showNoticeWithText:text type:(YJProgressHUDTypeInfo) autoClear:autoClear autoClearTime:autoClearTime];
+    return [YJHUD showNoticeWithText:text type:(YJProgressHUDTypeInfo) autoClear:autoClear autoClearTime:autoClearTime];
 }
 
 - (UIWindow *)showOnlyText:(NSString *)text {
     return [self showOnlyText:text autoClear:YES autoClearTime:2];
 }
 - (UIWindow *)showOnlyText:(NSString *)text autoClear:(BOOL)autoClear autoClearTime:(NSTimeInterval)autoClearTime {
-    return [YJProgressHUD showText:text autoClear:autoClear autoClearTime:autoClearTime];
+    return [YJHUD showText:text autoClear:autoClear autoClearTime:autoClearTime];
 }
 
 - (void)clearAllNotice {
-    [YJProgressHUD clear];
+    [YJHUD clear];
 }
 @end

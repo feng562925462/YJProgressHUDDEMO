@@ -1,11 +1,10 @@
 //
-//  YJProgressHUD.h
+//  YJHUD.h
 //  YJProgressHUDDEMO
 //
-//  Created by cool on 2018/4/19.
+//  Created by cool on 2018/4/20.
 //  Copyright © 2018年 cool. All rights reserved.
 //
-
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
@@ -15,7 +14,7 @@ typedef enum : NSUInteger {
     YJProgressHUDTypeInfo,
 } YJProgressHUDType;
 
-@interface YJProgressHUD : NSObject
+@interface YJHUD : NSObject
 
 + (UIWindow *)showNoticeOnStatusBar:(NSString *)text autoClear:(BOOL)autoClear autoClearTime:(NSInteger)autoClearTime;
 + (UIWindow *)showWait:(NSArray<UIImage *> *)images timeInterval:(NSTimeInterval)timeInterval;
@@ -24,7 +23,7 @@ typedef enum : NSUInteger {
 + (void)clear;
 @end
 
-@interface YJProgressHUD(Image)
+@interface YJHUD(Image)
 
 + (UIImage *)imageOfSuccess;
 + (UIImage *)imageOfError;
@@ -32,12 +31,12 @@ typedef enum : NSUInteger {
 + (UIImage *)drawImage:(YJProgressHUDType)type;
 @end
 
-@interface UIWindow(YJProgressHUD)
+@interface UIWindow(YJHUD)
 
 - (void)hide;
 @end
 
-@interface UIResponder(YJProgressHUD)
+@interface UIResponder(YJHUD)
 
 - (UIWindow *)showWait;
 - (UIWindow *)showWaitWithImages:(NSArray<UIImage *> *)images timeInterval:(NSTimeInterval)timeInterval;

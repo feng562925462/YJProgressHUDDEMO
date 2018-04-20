@@ -15,7 +15,7 @@
 		18445D362088783B00F847FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18445D352088783B00F847FC /* main.m */; };
 		18445D402088783B00F847FC /* YJProgressHUDDEMOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18445D3F2088783B00F847FC /* YJProgressHUDDEMOTests.m */; };
 		18445D4B2088783B00F847FC /* YJProgressHUDDEMOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18445D4A2088783B00F847FC /* YJProgressHUDDEMOUITests.m */; };
-		18445D5A2088786A00F847FC /* YJProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 18445D592088786A00F847FC /* YJProgressHUD.m */; };
+		18445D5D2089843D00F847FC /* YJHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 18445D5C2089843D00F847FC /* YJHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		18445D462088783B00F847FC /* YJProgressHUDDEMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YJProgressHUDDEMOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18445D4A2088783B00F847FC /* YJProgressHUDDEMOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJProgressHUDDEMOUITests.m; sourceTree = "<group>"; };
 		18445D4C2088783B00F847FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18445D582088786A00F847FC /* YJProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJProgressHUD.h; sourceTree = "<group>"; };
-		18445D592088786A00F847FC /* YJProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJProgressHUD.m; sourceTree = "<group>"; };
+		18445D5B2089843D00F847FC /* YJHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJHUD.h; sourceTree = "<group>"; };
+		18445D5C2089843D00F847FC /* YJHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +113,8 @@
 				18445D312088783B00F847FC /* LaunchScreen.storyboard */,
 				18445D342088783B00F847FC /* Info.plist */,
 				18445D352088783B00F847FC /* main.m */,
-				18445D582088786A00F847FC /* YJProgressHUD.h */,
-				18445D592088786A00F847FC /* YJProgressHUD.m */,
+				18445D5B2089843D00F847FC /* YJHUD.h */,
+				18445D5C2089843D00F847FC /* YJHUD.m */,
 			);
 			path = YJProgressHUDDEMO;
 			sourceTree = "<group>";
@@ -268,9 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				18445D2B2088783A00F847FC /* ViewController.m in Sources */,
+				18445D5D2089843D00F847FC /* YJHUD.m in Sources */,
 				18445D362088783B00F847FC /* main.m in Sources */,
 				18445D282088783A00F847FC /* AppDelegate.m in Sources */,
-				18445D5A2088786A00F847FC /* YJProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
