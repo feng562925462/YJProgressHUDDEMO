@@ -2,8 +2,8 @@
 #  Be sure to run `pod spec lint YJProgressHUD.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
-#  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
-#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
+#  To learn more about Podspec attributes see https://docs.cocoapods.org/specification.html
+#  To see working Podspecs in the CocoaPods repo see httpss://github.com/CocoaPods/Specs/
 #
 
 Pod::Spec.new do |s|
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "YJProgressHUD"
   s.version      = "0.0.1"
-  s.summary      = "A short description of YJProgressHUD."
+  s.summary      = "YJProgressHUD的简单使用工具"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,16 +25,16 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                    自己的方便使用的HUD
+                    方便使用的HUD，可以直接在控件中直接使用使用self发起调用
                    DESC
 
-  s.homepage     = "http://github.com/feng562925462/YJProgressHUDDEMO"
+  s.homepage     = "https://github.com/feng562925462/YJProgressHUDDEMO"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
-  #  Licensing your code is important. See http://choosealicense.com for more info.
+  #  Licensing your code is important. See https://choosealicense.com for more info.
   #  CocoaPods will detect a license file if there is a named LICENSE*
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
@@ -56,7 +56,7 @@ Pod::Spec.new do |s|
   s.author             = { "cool" => "562925462@qq.com" }
   # Or just: s.author    = "cool"
   # s.authors            = { "cool" => "562925462@qq.com" }
-  # s.social_media_url   = "http://twitter.com/cool"
+  # s.social_media_url   = "https://twitter.com/cool"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://github.com/feng562925462/YJProgressHUDDEMO.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/feng562925462/YJProgressHUDDEMO.git", :tag => s.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
