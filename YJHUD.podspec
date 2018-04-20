@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint YJProgressHUD.podspec' to ensure this is a
+#  Be sure to run `pod spec lint YJHUD.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see https://docs.cocoapods.org/specification.html
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YJHUD"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "HUD的简单使用工具"
 
   # This description is used to generate tags and improve search results.
