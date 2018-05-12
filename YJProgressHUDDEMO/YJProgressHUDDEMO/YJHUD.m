@@ -108,7 +108,7 @@ static NSInteger sn_topBar = 1001;
     CGRect frame = CGRectMake(0, 0, 78, 78);
     
     UIWindow *window = [[UIWindow alloc] init];
-    window.backgroundColor = [UIColor redColor];
+    window.backgroundColor = [UIColor clearColor];
     
     UIView *view = [[UIView alloc] init];
     view.layer.cornerRadius = 12;
@@ -207,6 +207,7 @@ static NSInteger sn_topBar = 1001;
 }
 
 + (UIWindow *)showNoticeWithText:(NSString *)text type:(YJProgressHUDType)type autoClear:(BOOL)autoClear autoClearTime:(NSTimeInterval)autoClearTime{
+    
     CGRect frame = CGRectMake(0, 0, 90, 90);
     
     UIWindow *window = [[UIWindow alloc] init];

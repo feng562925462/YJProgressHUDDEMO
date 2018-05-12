@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "YJHUD.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+/**
+ 1.等待状态下的背景由红色改为透明
+    */
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self showError:@"一二三四五一2"];
 }
-
+    
 
 @end
